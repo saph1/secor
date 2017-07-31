@@ -62,7 +62,6 @@ public class KafkaProtoMessageTimestamp implements KafkaMessageTimestamp {
             throw new RuntimeException("Error parsing protobuf message", e);
                         }
 
-        System.out.println(">>>>>>>>>>>>>>>>>>>>>> tstmp:: "+resultFinal);
         if (resultFinal != null)
         return resultFinal;
         else return 0L;
